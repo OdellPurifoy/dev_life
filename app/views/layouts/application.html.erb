@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <p class="alert alert-success"><%= notice %></p>
+    <p class="alert alert-danger"><%= alert %></p>
 
     <div class="container">
       <!-- Start of navbar -->
@@ -44,8 +44,16 @@
             </form>
           </div>
           <!-- End of navbar -->
-
         </div>
+
+        <!-- Start of jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">DevLife</h1>
+            <p class="lead">Blog documenting the life of an up a comming programmer.</p>
+          </div>
+        </div>
+        <!-- End of jumbotron -->
         <%= yield %>
 
       </div>
